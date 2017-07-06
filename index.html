@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=970px">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TenBagger Fund</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="http://hilios.github.io/jQuery.countdown/css/syntax.css">
+    <link rel="stylesheet" href="./assets/css/jquery.countdown.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/js.js"></script>
+</head>
+<body>
+
+    <div class="timer-container">
+        <h1>TenBagger Fund launch date</h1>
+        <time>01.08.2017</time>
+
+        <div class="main-example">
+            <div id="main-example" class="countdown-container"></div>
+        </div>
+
+        <script type="text/template" id="main-example-template">
+            <div class="time <%= label %>">
+              <span class="count curr top"><%= curr %></span>
+              <span class="count next top"><%= next %></span>
+              <span class="count next bottom"><%= next %></span>
+              <span class="count curr bottom"><%= curr %></span>
+              <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+            </div>
+        </script>
+    </div>
+
+</body>
+</html>
